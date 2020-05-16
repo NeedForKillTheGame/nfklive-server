@@ -1,0 +1,63 @@
+/////////////////////////////////////////////
+// Castle Tree Engine
+// Author: 	2009 ConnecT
+// Module:	News
+// Item:	Theme template
+// Version:	0.0.2 27.04.2009
+/////////////////////////////////////////////
+
+<!-- GTW: main -->
+<style>
+
+.table_odd {
+    border: 1px dashed white;
+}
+
+.table_even {
+    border: 1px dashed black;
+}
+
+.news_topic {
+    font-size: 24pt;
+    color: #ffffff;
+}
+
+.news_body {
+    font-size: 16pt;
+}
+
+.news_time {
+    font-size: 16pt;
+    color: white;
+}
+
+.avatar {
+    border: thin solid #ffffff;
+}
+</style>
+<table width="100%" valign="top" border=0>
+	<td>
+		{NEWS_ROWS}
+		<!-- GTW: news_row -->
+		<table class="table_{IF_EVEN}" width="100%" valign="top" border=0 cellpadding="5" cellspacing="0">
+			<tr>
+				<td width="105px" valign="top">
+					<img src="{THEME_ROOT}/img/newsgroup/{NEWS_TYPE}.png">
+				</td>
+				<td valign="top" align="justify">
+					<span class="news_topic">{NEWS_TOPIC}</span>
+					<br>
+					<span class="news_body">{NEWS_BODY}</span>
+				</td>
+				<td valign="top" align="right" width="120px">
+				    <span class="news_time">{NEWS_POSTED}</span><br>
+				    <br>
+				    <img src="avatars/{POSTER_ID}.jpg" class="avatar"> &nbsp;&nbsp;
+				</td>
+			</tr>
+		</table>
+		<br>
+		<!-- GTW: /news_row -->
+	</td>
+</table>
+<!-- GTW: /main -->

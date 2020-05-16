@@ -1,0 +1,267 @@
+/////////////////////////////////////////////
+// Castle Tree Engine
+// Author: 	2009 ConnecT
+// Module:	Home (server list)
+// Item:	Theme template
+// Version:	0.0.5 07.10.2009
+/////////////////////////////////////////////
+
+<!-- GTW: if_logged_createsrv -->
+	<div><a href="nfk://!createServer;{PSID}"><img src="./images/duel_detective/create_server.jpg"></a></div>
+	<br>
+	<!-- GTW: else -->
+	
+<!-- GTW: /if_logged_createsrv -->
+
+<!-- GTW: main -->
+<div id="postlogin_dataready" style="">
+     
+	<div class="postlogin_nav">
+        <a href="{SELF}?/home" class=" fl navButton selected" id="btn_playonline"></a>
+        <!--<a href="javascript:;" class=" fl navButton " id="btn_practice" onclick="quakelive.Goto('practice')"></a>-->
+        <!--<a href="javascript:;" class="fr filterbar_toggle fl navButton" id="btn_customize" onclick="quakelive.mod_home.ToggleFilterBar()"></a>-->
+                                <div style="display: none;" class="tipsline"><label for="hidetips">Hide on startup</label> <input id="hidetips" type="checkbox"></div>
+                <div class="cl"></div>
+    <ul>
+                                    <li class="selected" onclick="quakelive.Goto('home')">Match Browser</li>
+                            <div class="cl"></div>
+    </ul>
+	</div>        
+	<div class="filterbar">
+            <div class="filterbar_content">
+                <img src="./images/icons/help.png" class="fl fivepxhr fivepxh" height="16" width="16">
+                Select from the following options to customize your online games view:
+                <div class="cl"></div>
+                <div style="margin: 0pt auto; width: 620px;">
+                    <div class="filter_control">
+                        <label class="" for="ctrl_filter_social" title="View only games with specific groups of people">Game Players:</label>
+                        <select name="group" class="filter" id="ctrl_filter_social">
+                            <option selected="selected" value="any">Any Players</option>
+                            <option value="friends">My Friends</option>
+                        </select>
+                    </div>
+
+                    <div class="filter_control">
+                        <label class="" for="ctrl_filter_gametype" title="View only games of a particular type">Game Type:</label>
+                        <select name="game_type" class="filter" id="ctrl_filter_gametype">
+                            <option selected="selected" value="any">All Game Types</option>
+                            <optgroup label="Ranked Game Types">
+                                <option value="1">Any Team Game (CTF, CA, TDM)</option>
+                                <option value="2">Free For All</option>
+                                <option value="3">Capture The Flag (CTF)</option>
+                                <option value="4">Clan Arena (CA)</option>
+                                <option value="5">Team Deathmatch (TDM)</option>
+                                <option value="6">Duel</option>
+                            </optgroup>
+                            <optgroup label="Unranked Game Types">
+                                <option value="7">Instagib</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="filter_control">
+                        <label class="" for="ctrl_filter_arena" title="View only games on a particular arena">Game Arena:</label>
+                        <select name="arena" class="filter" id="ctrl_filter_arena">
+                            <option selected="selected" value="any">All Arenas</option>
+                            <optgroup label="Arena Types">
+                            <!--    <option label="tag" value="5">Beginner</option>
+                                <option class="filter_tag" value="6">Intermediate</option>
+                                <option class="filter_tag" value="7">Advanced</option> -->
+                                <option class="filter_tag" value="10">Small</option>
+                                <option class="filter_tag" value="11">Medium</option>
+                                <option class="filter_tag" value="12">Large</option>
+                                <option class="filter_tag" value="1">Popular</option>
+                                <option class="filter_tag" value="2">Space</option>
+                                <option class="filter_tag" value="3">Team Arena</option>
+                                <option class="filter_tag" value="0">New for QUAKE LIVE</option>
+                            </optgroup>
+                            <optgroup label="Specific Arenas"><option class="filter_map" value="qztourney6">Almost Lost</option><option class="filter_map" value="qzdm1">Arena Gate</option><option class="filter_map" value="qzdm3">Arena Of Death</option><option class="filter_map" value="qzca1">Asylum</option><option class="filter_map" value="qzteam1">Base Siege</option><option class="filter_map" value="qzctf6">Beyond Reality II</option><option class="filter_map" value="ztntourney1">Blood Run</option><option class="filter_map" value="qzctf9">Bloodlust CTF</option><option class="filter_map" value="qzdm8">Brimstone Abbey</option><option class="filter_map" value="qzdm6">Campgrounds Redux</option><option class="filter_map" value="qzdm11">Chemical Reaction</option><option class="filter_map" value="qzdm16">Cobalt Station</option><option class="filter_map" value="qzctf10">Courtyard Conundrum</option><option class="filter_map" value="qzdm15">Demon Keep</option><option class="filter_map" value="qzdm12">Dredwerkz</option><option class="filter_map" value="qzctf1">Dueling Keeps</option><option class="filter_map" value="qzdm5">Forgotten Place</option><option class="filter_map" value="qztourney7">Furious Heights</option><option class="filter_map" value="qzdm14">Grim Dungeons</option><option class="filter_map" value="qztourney3">Hell's Gate</option><option class="filter_map" value="qztourney5">Hell's Gate Redux</option><option class="filter_map" value="qzdm9">Hero's Keep</option><option class="filter_map" value="qzdm20">Hidden Fortress</option><option class="filter_map" value="qztourney9">House of Decay</option><option class="filter_map" value="qzdm2">House Of Pain</option><option class="filter_map" value="qzteam3">Inner Sanctums</option><option class="filter_map" value="qzctf7">Ironworks</option><option class="filter_map" value="qzdm13">Lost World</option><option class="filter_map" value="qzdm10">Nameless Place</option><option class="filter_map" value="qzdm4">Place Of Many Deaths</option><option class="filter_map" value="qztourney1">Power Station</option><option class="filter_map" value="qztourney2">Proving Grounds</option><option class="filter_map" value="qzca3">Quarantine</option><option class="filter_map" value="qzteam7">Rebound</option><option class="filter_map" value="qzteam4">Scornforge</option><option class="filter_map" value="qzctf8">Siberia</option><option class="filter_map" value="qzdm18">Space Chamber</option><option class="filter_map" value="qzctf4">Space CTF</option><option class="filter_map" value="qztourney8">Temple of Pain</option><option class="filter_map" value="qzdm7">Temple Of Retribution</option><option class="filter_map" value="qzdm19">Terminal Heights</option><option class="filter_map" value="qzdm17">The Longest Yard</option><option class="filter_map" value="qzctf3">The Stronghold</option><option class="filter_map" value="qzca2">Trinity</option><option class="filter_map" value="qzctf2">Troubled Waters</option><option class="filter_map" value="qztourney4">Vertical Vengeance</option><option class="filter_map" value="qzteam6">Vortex Portal</option></optgroup>
+                        </select>
+                    </div>
+                    
+                    <div class="cl tenpxv"></div>
+
+                    <div class="filter_control">
+                        <label class="" for="ctrl_filter_gamestate" title="View only games in a particular state">Game State:</label>
+                        <select name="state" class="filter" id="ctrl_filter_gamestate">
+                            <option selected="selected" value="any">Any Game State</option>
+                            <option value="POPULATED">All Populated</option>
+                            <option value="PRE_GAME">Pre-Game Warmup</option>
+                            <option value="IN_PROGRESS">In-Progress</option>
+                            <option value="EMPTY">Waiting For Players (Empty)</option>
+                        </select>
+                    </div>
+
+                    <div class="filter_control">
+                        <label class="selected" for="ctrl_filter_difficulty" title="View only games at the specified difficulty">Game Difficulty:</label>
+                        <select name="difficulty" class="filter" id="ctrl_filter_difficulty">
+                            <option value="any">Any Difficulty</option>
+                            <option selected="selected" value="1">Skill Matched</option>
+                            <option value="2">More Challenging</option>
+                            <option value="3">Very Difficult</option>
+                        </select>
+                    </div>
+
+                    <div class="filter_control">
+                        <label class="" for="ctrl_filter_location" title="View only games hosted on a specific network">Game Location:</label>
+                        <select name="location" class="filter" id="ctrl_filter_location">
+                            <option selected="selected" value="any">In Your Vicinity</option>
+                            <option value="ALL">All Locations</option>
+                            <optgroup label="Region">
+                            <option value="Asia">Asia</option><option value="Australia">Australia</option><option value="Europe">Europe</option><option value="USA">USA</option></optgroup>
+                        <optgroup label="ARG (Argentina)"><option value="40">ARG, Buenos Aires</option></optgroup><optgroup label="AUS (Australia)"><option value="35">AUS, Perth</option><option value="33">AUS, Sydney #2</option><option value="14">AUS, Sydney</option></optgroup><optgroup label="CAN (Canada)"><option value="26">CAN, Toronto</option></optgroup><optgroup label="CHL (Chile)"><option value="38">CHL, Santiago</option></optgroup><optgroup label="CHN (China)"><option value="31">CHN, Hangzhou</option></optgroup><optgroup label="DEU (Germany)"><option value="18">DEU, Frankfurt</option></optgroup><optgroup label="ESP (Spain)"><option value="28">ESP, Madrid</option></optgroup><optgroup label="FRA (France)"><option value="20">FRA, Paris</option></optgroup><optgroup label="GBR (United Kingdom)"><option value="19">GBR, Maidenhead</option></optgroup><optgroup label="ISL (Iceland)"><option value="41">ISL, Keflavik</option></optgroup><optgroup label="JPN (Japan)"><option value="27">JPN, Tokyo</option></optgroup><optgroup label="NLD (Netherlands)"><option value="17">NLD, Amsterdam</option></optgroup><optgroup label="POL (Poland)"><option value="30">POL, Warsaw</option><option value="32">POL, Warsaw #2</option></optgroup><optgroup label="ROM (Romania)"><option value="37">ROM, Bucharest</option><option value="39">ROM, Bucharest #2</option></optgroup><optgroup label="SWE (Sweden)"><option value="29">SWE, Stockholm</option><option value="36">SWE, Stockholm #2</option></optgroup><optgroup label="USA"><option value="25">CA, Los Angeles</option><option value="10">CA, Palo Alto</option><option value="16">CA, San Francisco</option><option value="22">GA, Atlanta</option><option value="21">IL, Chicago</option><option value="24">NY, New York</option><option value="6">TX, Dallas</option><option value="11">VA, Ashburn</option><option value="23">WA, Seattle</option></optgroup></select>
+                    </div>
+                    
+		    <div class="fr" style="margin-right: 20px;">
+                        <a href="javascript:;" onclick="quakelive.mod_home.ResetBrowserFilter(); return false" class="reset_view_btn fl tenpxh eighteenpxv"></a>
+                        <a href="javascript:;" onclick="quakelive.mod_home.SaveBrowserFilter(); return false" class="save_view_btn fl twentypxh eighteenpxv"></a>
+		    </div>
+
+                    <div class="fl" style="margin: 22px 0pt 0pt 10px;">
+                        <input checked="checked" name="private" value="0" id="publicServer" type="radio"> <label for="publicServer" style="display: inline; margin-right: 10px;">Show Public Matches</label>
+                        <input name="private" value="1" id="privateServer" type="radio"> <label for="privateServer" style="display: inline;">Show Private Matches</label>
+                    </div>
+
+		    <!-- doing a clear:both here is causing some very odd problems on IE - FIXME! -->
+                </div>
+            </div>
+        </div>
+        <!--
+		<div style="position: relative;">
+            <div style="display: block;" class="filterbar_notice"><a href="javascript:;" onclick="quakelive.mod_home.ResetBrowserFilter(); return false">This view has been customized.</a></div>
+        </div>
+		-->
+        <div style="height: 513px;" id="qlv_postlogin_matches" class="cl">
+		<!-- Match Rows -->
+		{MATCH_ROWS}
+		<!-- GTW: match_row -->
+		<div class="qlv_pls_box" id="match_{MATCH_ID}">
+			<a href="nfk://{SERVER_IP};{PSID}">
+			<img src="./images/levelshots/lg/{MAP_NAME}.png" alt="" class="thumb" height="124" width="165" >
+			<div class="qlv_inner_box">
+				<div class="gamelabel">{GAMETYPE}</div>
+				<img src="./images/sf/login/rank_1.png" class="gamerank">
+				<img src="./images/gametypes/{GAMETYPE_SHORT}_md.png" class="gameicon">
+				<div class="players">{PLAYERCOUNT}/{PLAYERMAX} Players</div>
+				<img class="location_flag" src="./images/flags3cc/{COUNTRY_CC3}.gif" height="11" width="16">
+				<div class="location_text">{CITY}</div>
+			</div>
+			</a>
+		</div>	
+		<!-- GTW: /match_row -->
+		<!-- /Match Rows -->
+		</div>	
+</div>
+</div>
+{BRIEF_STATS}
+<!-- GTW: if_logged -->
+<div class="quickstats_offlinegame"><div class="personal_stats">
+    <img alt="" src="./images/sf/offline/quickStats_title.png" class="quickStats" height="11px" width="191px">
+    <!--<a href="javascript:;" onclick="quakelive.Goto('profile/statistics/connect'); return false">
+        <img alt="" src="./images/sf/offline/viewFull_btn.png" class="viewFull" height="17px" width="154px"></a>
+    -->
+	<div class="cl">
+    </div>
+    <div class="w19 fl">
+        &nbsp;</div>
+    <div class="characterProfile">
+        <div class="character_content" style="background-image: url(./images/players/body_md/{MODELSKIN_LOW}.png);">
+            <div class="charProTxt">
+                <div style="color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; position: relative; left: 30px; top: 3px;">{MODEL_NAME}</div>
+                <div class="lh1">
+                </div>
+                <!--<div class="profile_text">Character Profile</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="w7 fl">
+        &nbsp;</div>
+    <div class="topstat">
+        <div style="height: 21px;">&nbsp;</div>
+        <div class="charNameStats">
+            <span class="headName"> {CLANTAG_NOCOLOR} {NICK_NOCOLOR}</span>
+            <div class="statInfo">
+                <div style="height: 5px;">&nbsp;</div>
+            	<span class="fragNumb">
+            		<b>Total Frags:</b> {FRAGS}
+            	</span>
+                <div class="stats">
+                    <b>Games Played:</b> {GAMES}
+                    <br>
+                                        <b>Time Played:</b> 
+                        <span title="{TIME_FULL}">{TIME_DAYS}</span>
+                    <br>
+                                        <b>Last Game:</b> 
+                                                    <span title="{LASTGAME_FULL}">{LASTGAME_DAYHOURS} ago</span>
+                                            <br>                
+                    
+                    <b>Accuracy (Hits / Shots):</b> {ACCURACY}% ({HITS} / {FIRE})
+                    <br>
+                    <b>Win / Loss (Ratio):</b> {WINS} / {LOSSES} ({WIN_RATIO})
+                    <br>
+                    <b>Kill / Death (Ratio):</b> {FRAGS} / {DEATHS} ({FRAG_RATIO})
+                </div>
+            </div>
+        </div>
+        <div class="recentAward_sec">
+            <div class="h37">
+                &nbsp;</div>
+            <img alt="" src="./images/sf/offline/recAwards_title.png" height="10px" width="113px">
+            <div class="awards">
+				{AWARDS}
+                <!-- GTW: awards -->
+				<div class="h6">&nbsp;</div>
+                <ul>
+					{AWARD_ROWS}
+					<!-- GTW: award_row -->
+                    <li title="{AWARD_NAME}" class="interactive">
+						<img alt="" src="./images/awards/sm/{AWARD_NAME_FILE}.png" height="48" width="48">
+					</li>
+					<!-- GTW: /award_row -->
+                </ul>
+				<!-- GTW: /awards -->
+            </div>
+        </div>
+        <div class="clearLeft">
+        </div>
+        <div class="favarea">
+            <img alt="" src="./images/sf/offline/fav_title.png" class="favTitle" height="11px" width="78px">
+            <div class="favItem">
+                {FAV_WEAPON}
+				<!-- GTW: fav_weap -->
+				<div class="favContent">
+                    <img alt="" src="./images/weapons/3d/{WEAPON_SHORTNAME}.png" height="60px" width="80px">
+                    <br>
+                    <div class="favItemTitle">{WEAPON_FULLNAME}</div>
+                </div>
+				<!-- GTW: /fav_weap -->
+            </div>
+            <div class="favItem">
+                {FAV_GAMETYPE}
+				<!-- GTW: fav_gametype -->
+				<div class="favContent">
+                    <img alt="" src="./images/gametypes/{GAMETYPE_SHORT}.png" height="60px" width="60px">
+                    <br>
+                    <div class="favItemTitle">{GAMETYPE_FULL}</div>
+                </div>
+				<!-- GTW: /fav_gametype -->
+            </div>
+            <div class="favItem">
+                {FAV_MAP}
+				<!-- GTW: fav_map -->
+				<div class="favContent">
+                                        <img alt="" src="./images/levelshots/ci/qzdm6.png" height="60px" width="60px">
+                    <br>
+                                        <div class="favItemTitle">Campgrounds Redux</div>
+                </div>
+				<!-- GTW: /fav_map -->
+            </div>
+        </div>
+    </div>
+    <div class="cl">
+    </div>
+</div>
+<!-- GTW: else -->
+
+<!-- GTW: /if_logged -->
+<!-- GTW: /main -->

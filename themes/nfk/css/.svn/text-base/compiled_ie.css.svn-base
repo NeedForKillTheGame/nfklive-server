@@ -1,0 +1,7 @@
+/*
+ * Specific declarations for certain things that don't work well
+ * under IE browsers. Such as fades, transparency, etc. These set
+ * of rules will be for setting a fair replacement to a fade in
+ * these situations.
+ */
+.place a small,.top_place small,.characterName small,.prf_friend .player_name a .clan,.rosteritem-name .player_name small{{color:#777}.is_friend a .clan{color:#bbb !important}

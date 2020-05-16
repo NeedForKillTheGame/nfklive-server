@@ -1,0 +1,129 @@
+/////////////////////////////////////////////
+// Castle Tree Engine
+// Author: 	2009 ConnecT
+// Module:	Profile / Summary
+// Item:	Theme template
+// Version:	0.0.1 28.10.2009
+/////////////////////////////////////////////
+
+<!-- GTW: if_logged_createsrv -->
+	<div><a href="nfk://!createServer;{PSID}"><img src="./images/duel_detective/create_server.jpg"></a></div>
+	<br>
+	<!-- GTW: else -->
+	
+<!-- GTW: /if_logged_createsrv -->
+
+<!-- GTW: main -->
+
+{BRIEF_STATS}
+<!-- GTW: if_logged -->
+<div class="quickstats_offlinegame"><div class="personal_stats">
+    <img alt="" src="./images/sf/offline/quickStats_title.png" class="quickStats" height="11px" width="191px">
+    <!--<a href="javascript:;" onclick="quakelive.Goto('profile/statistics/connect'); return false">
+        <img alt="" src="./images/sf/offline/viewFull_btn.png" class="viewFull" height="17px" width="154px"></a>
+    -->
+	<div class="cl">
+    </div>
+    <div class="w19 fl">
+        &nbsp;</div>
+    <div class="characterProfile">
+        <div class="character_content" style="background-image: url(./images/players/body_md/{MODELSKIN_LOW}.png);">
+            <div class="charProTxt">
+                <div style="color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; position: relative; left: 30px; top: 3px;">{MODEL_NAME}</div>
+                <div class="lh1">
+                </div>
+                <!--<div class="profile_text">Character Profile</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="w7 fl">
+        &nbsp;</div>
+    <div class="topstat">
+        <div style="height: 21px;">&nbsp;</div>
+        <div class="charNameStats">
+            <span class="headName"> {CLANTAG_NOCOLOR} {NICK_NOCOLOR}</span>
+            <div class="statInfo">
+                <div style="height: 5px;">&nbsp;</div>
+            	<span class="fragNumb">
+            		<b>Total Frags:</b> {FRAGS}
+            	</span>
+                <div class="stats">
+                    <b>Games Played:</b> {GAMES}
+                    <br>
+                                        <b>Time Played:</b> 
+                        <span title="{TIME_FULL}">{TIME_DAYS}</span>
+                    <br>
+                                        <b>Last Game:</b> 
+                                                    <span title="{LASTGAME_FULL}">{LASTGAME_DAYHOURS} ago</span>
+                                            <br>                
+                    
+                    <b>Accuracy (Hits / Shots):</b> {ACCURACY}% ({HITS} / {FIRE})
+                    <br>
+                    <b>Win / Loss (Ratio):</b> {WINS} / {LOSSES} ({WIN_RATIO})
+                    <br>
+                    <b>Kill / Death (Ratio):</b> {FRAGS} / {DEATHS} ({FRAG_RATIO})
+                </div>
+            </div>
+        </div>
+        <div class="recentAward_sec">
+            <div class="h37">
+                &nbsp;</div>
+            <img alt="" src="./images/sf/offline/recAwards_title.png" height="10px" width="113px">
+            <div class="awards">
+				{AWARDS}
+                <!-- GTW: awards -->
+				<div class="h6">&nbsp;</div>
+                <ul>
+					{AWARD_ROWS}
+					<!-- GTW: award_row -->
+                    <li title="{AWARD_NAME}" class="interactive">
+						<img alt="" src="./images/awards/sm/{AWARD_NAME_FILE}.png" height="48" width="48">
+					</li>
+					<!-- GTW: /award_row -->
+                </ul>
+				<!-- GTW: /awards -->
+            </div>
+        </div>
+        <div class="clearLeft">
+        </div>
+        <div class="favarea">
+            <img alt="" src="./images/sf/offline/fav_title.png" class="favTitle" height="11px" width="78px">
+            <div class="favItem">
+                {FAV_WEAPON}
+				<!-- GTW: fav_weap -->
+				<div class="favContent">
+                    <img alt="" src="./images/weapons/3d/{WEAPON_SHORTNAME}.png" height="60px" width="80px">
+                    <br>
+                    <div class="favItemTitle">{WEAPON_FULLNAME}</div>
+                </div>
+				<!-- GTW: /fav_weap -->
+            </div>
+            <div class="favItem">
+                {FAV_GAMETYPE}
+				<!-- GTW: fav_gametype -->
+				<div class="favContent">
+                    <img alt="" src="./images/gametypes/{GAMETYPE_SHORT}.png" height="60px" width="60px">
+                    <br>
+                    <div class="favItemTitle">{GAMETYPE_FULL}</div>
+                </div>
+				<!-- GTW: /fav_gametype -->
+            </div>
+            <div class="favItem">
+                {FAV_MAP}
+				<!-- GTW: fav_map -->
+				<div class="favContent">
+                                        <img alt="" src="./images/levelshots/ci/qzdm6.png" height="60px" width="60px">
+                    <br>
+                                        <div class="favItemTitle">Campgrounds Redux</div>
+                </div>
+				<!-- GTW: /fav_map -->
+            </div>
+        </div>
+    </div>
+    <div class="cl">
+    </div>
+</div>
+<!-- GTW: else -->
+
+<!-- GTW: /if_logged -->
+<!-- GTW: /main -->

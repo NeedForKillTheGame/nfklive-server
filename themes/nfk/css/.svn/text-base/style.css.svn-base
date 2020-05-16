@@ -1,0 +1,15 @@
+#v-default {
+    background-color: #1a1511;
+    background-image: url(http://conn.ee/nfk/live/valances/default/default.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.lyt_prelogin {
+    margin: 0px;
+}
+
+.lyt_postlogin {
+    margin: 0px;
+    background-position: center top;
+}

@@ -1,0 +1,635 @@
+/////////////////////////////////////////////
+// Castle Tree Engine
+// Author: 	2009 ConnecT
+// Theme:	NFK[R2]LIVE
+// Item:	Theme template \ Main
+// Version:	0.0.6 08.10.2009
+/////////////////////////////////////////////
+
+
+<!-- GTW: main -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title>NFK [R2] LIVE</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" href="./favicon.ico">
+
+<link rel="stylesheet" href="{THEME_ROOT}/css/style.css" type="text/css">
+<link rel="stylesheet" href="{THEME_ROOT}/css/compiled.css" type="text/css">
+
+<!--[if lte IE 6]>
+
+<link rel='stylesheet' href='{THEME_ROOT}/css/compiled_ie6.css' type='text/css' />
+
+<![endif]-->
+
+<!--[if lte IE 8]>
+
+<link rel='stylesheet' href='{THEME_ROOT}/css/compiled_ie.css' type='text/css' />
+
+<![endif]-->
+
+<link media="all" href="{THEME_ROOT}/css/widget15.css" type="text/css" rel="stylesheet">
+<!-- <script src="{THEME_ROOT}/js/spc_003.js"></script>
+<script src="{THEME_ROOT}/js/spc.js"></script><script src="{THEME_ROOT}/js/spc_002.js"></script> -->
+</head><body class="lyt_postlogin" id="v-default">
+
+
+<noscript> <div id='noscript-overlay-bg'></div> <div
+id='noscript-overlay'> <div id='noscript-overlay-inner'> <div
+id='noscript-overlay-close'> </div> <div class="dialog"> <div
+class="content"> <div class="t"></div> <div
+id='noscript-overlay-content'> <center> <img
+src='./images/site/logo.png'
+width="365" height="52" /> <h2> NFK [R2] LIVE makes extensive use of
+Javascript.<br /><br /> Please <a
+href='http://www.google.com/support/adsense/bin/answer.py?answer=12654'>enable
+Javascript</a> in your browser. </h2> </center> </div> </div> <div
+class="b"><div></div></div> </div> </div> </div>
+</noscript>
+
+<div id="overlay-bg"></div>
+<div id="overlay">
+    <div id="overlay-inner">
+        <div id="overlay-close">
+        </div>
+        <div class="dialog">
+            <div class="content">
+                <div class="t"></div>
+                <div id="overlay-content">
+                </div>
+            </div>
+            <div class="b"><div></div></div>
+        </div>
+    </div>
+</div>
+<div id="overlay-raw">
+</div>
+
+<div id="qlv_game_mode" style="top: -9999px;">
+    <div class="game_wrapper">
+        <div class="header_left">
+            <span class="url_link shadow"></span>
+            <span class="url_link highlight"></span>
+            <input id="url_link_input" readonly="readonly">
+        </div>
+
+        <div class="header_right">
+            <span class="action_txt shadow"></span>
+            <span class="action_txt highlight"></span>
+            <span class="action_img"></span>
+        </div>
+
+        <div class="cl"></div>
+
+        <div id="qlv_game_mode_viewport" class="content_left">
+            <div id="qz_handshake">
+			<!-- <object id="qz_instance" class="game_viewport" type="application/x-id-quakelive" height="100%" width="100%"></object> -->
+			<a class="grptysvehxyuzskroytf" href="http://www.quakelive.com/"></a></div>
+        </div>
+
+        <div id="qlv_game_mode_chatlist" class="content_right"></div>
+        <div class="cl"></div>
+    </div>
+
+</div>
+
+<div id="qlv_site_popup">
+</div>
+
+<div id="body-container"><div id="qlv_container" class="tc">
+		<!--<div id="qlv_topFadeAds">
+        <div class="fl" id="valance_lb720_advert"><div style="border: 2px solid rgb(255, 255, 255); background: transparent url(./images/a/leaderboard.jpg) repeat scroll 0% 0%; width: 728px; height: 90px; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;"><div id="vert_main_leaderboard" class="ql_vert_frame" style="width: 728px; height: 90px;"></div></div></div>
+        <div class="fr" id="valance_self_advert" style="border: 0pt none ; position: relative;"><div style="background: transparent url(./valances/default/learn_more.png) repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; width: 260px; height: 94px;"></div><div class="interactive" style="position: absolute; left: 4px; top: 55px; width: 119px; height: 30px;"></div><div class="interactive" style="position: absolute; left: 128px; top: 55px; width: 127px; height: 30px;"></div></div>
+		<div class="cl"></div>
+	</div>-->
+		<div id="qlv_content" class="fl tl">
+		<div id="qlv_mainLogo">
+                        <a href="{SELF}"><img src="./images/sf/general/logo.png" alt="" class="mainLogo fl" height="100" width="405"></a>
+			<div class="fr mainLogoRight">
+				<div class="fourpxv"></div>
+				{FORM_LOGIN}
+				<!-- GTW: if_login -->					                                                                        
+				<div id="qlv_userInfoContainer">
+                        <!--<a href="javascript:;" onclick="quakelive.mod_prefs.ShowOverlay(); return false" id="qlv_userTmb" class="nametag-icon" style="display: block;">-->
+							<img src="./images/players/icon_lg/{MODELSKIN_LOW}.jpg" height="43" width="43">
+						<!--</a>-->
+
+                        <div id="qlv_userInfo">
+                            <span class="WelcomeText">Welcome back {NICK_NOCOLOR}</span>
+                            <br><span class="smallWhite" id="qlv_statusTop">Member since {DATE_REGISTERED}</span>
+                            <br><span class="smallWhite" id="qlv_statusBottom"></span>
+                                                  
+                            <div style="" id="qlv_siteStatus">
+                                <div class="outline"></div>
+                                <div class="front"></div>
+                            </div>
+
+                            <div id="qlv_topLinks" class="TopLinks">
+                                <!--
+								<a href="javascript:;" onclick="quakelive.mod_prefs.ShowOverlay(); return false">
+								-->Game Settings<!--</a>--> | 
+                                <!--<a href="javascript:;" onclick="quakelive.Goto('user/edit'); return false">-->Edit My Profile<!--</a>--> | 
+								<a href="{SELF}?/logoff">Log Off</a>
+                            </div>
+                        </div>
+                    </div>                        									
+		   
+		    <!-- GTW: else -->
+		    <div>
+                        <form name="flogin" method="post" action="{SELF}?/login">
+                            <input style="border: medium none ; position: absolute; top: -9999px; width: 0pt; height: 0pt;" type="submit">
+                            <div style="height: 25px;">
+                                <div class="fr goButton"><a href="javascript:;" onclick="document.flogin.submit();"></a></div>
+                                <div class="fr"><input class="txtBox medshort inputField" name="f_password" value="" id="in_password" tabindex="102" type="password"></div>
+                                <div class="fr"><label for="in_password"><img src="./images/sf/PreLogin/Password.png" alt="" height="20" width="85"></label> &nbsp; </div> 
+                                <div class="fr ninepxh">&nbsp;</div>
+                                <div class="fr"><input class="txtBox medmed inputField" name="f_login" id="in_email" tabindex="101" type="text"> &nbsp; </div>
+                                <div class="fr"><label for="in_email"><img src="./images/sf/PreLogin/Email.png" alt="" height="20" width="47"></label> &nbsp; </div> 
+                                <div class="cl"></div>
+								<input type="hidden" name="f_action" value="login">
+                            </div>
+                            <div class="fourpxnoie"></div>
+							<!--
+                            <div id="qlv_prelmidrow">
+                                <div class="fr whiteTxt footerCopy">
+                                    <label for="in_remember" class="smallWhiteSkinny interactive fl">Remember Me</label>
+                                    <div class="cl"></div>
+                                </div>
+                                <div class="fr fivepxh">&nbsp;</div>
+                                <input name="r" value="1" id="in_remember" tabindex="103" class="fr" type="checkbox">
+                                <div class="fr twentypxwide">&nbsp;</div>
+                                <div class="fr smallWhiteSkinny"><a href="javascript:;" onclick="quakelive.Goto('forgot'); return false">Forgot your password?</a>&nbsp;</div>
+                                <div class="cl"></div>
+                            </div>
+							-->
+                        </form>
+                    </div>
+		    
+		    <!-- GTW: /if_login -->
+			</div>				
+            			<div class="cl"></div>
+		</div>
+		                
+		<!-- ### main content area ### -->
+		<div id="newnav_top"><ul id="topNav" class="sf-menu sf-js-enabled"><li class="selected" id="tn_home"><a class="sf-with-ul" href="javascript:;" onclick="window.navigate('{SELF}?/home')">&nbsp;<span class="sf-sub-indicator"></span></a><!--<ul class="" style="display: none; visibility: hidden;"><li class=""><a href="javascript:;" onclick="quakelive.mod_home.GotoOnlineGames(); return false; ">Play Online</a></li><li class=""><a class="sf-with-ul" href="javascript:;" onclick="quakelive.mod_home.GotoOfflineGames(); return false; ">Practice<span class="sf-sub-indicator"></span></a><ul class="" style="display: none; visibility: hidden;"><li><a href="javascript:;" onclick="quakelive.Goto('practice/launcher'); return false;">Start a Match</a></li><li><a href="javascript:;" onclick="quakelive.Goto('practice/training'); return false;">Training Center</a></li></ul></li><li class=""><a href="javascript:;" onclick="quakelive.Goto('profile/summary/nomsi'); return false;">Profile of the Day</a></li></ul></li><li class="" id="tn_profile"><a class="sf-with-ul" href="javascript:;" onclick="quakelive.Goto('profile/summary/connect'); return false;">&nbsp;<span class="sf-sub-indicator"></span></a><ul class="" style="display: none; visibility: hidden;"><li><a href="javascript:;" onclick="quakelive.Goto('profile/summary/connect'); return false;">Summary</a></li><li><a href="javascript:;" onclick="quakelive.Goto('profile/statistics/connect'); return false;">Statistics</a></li><li><a href="javascript:;" onclick="quakelive.Goto('profile/awards/connect'); return false;">Awards</a></li><li><a href="javascript:;" onclick="quakelive.Goto('profile/friends/connect'); return false;">Friends</a></li><li><a href="javascript:;" onclick="quakelive.Goto('profile/competitors/connect'); return false;">Competitors</a></li><li><a href="javascript:;" onclick="quakelive.Goto('profile/matches/connect'); return false;">Matches</a></li></ul></li><li class="" id="tn_friends"><a class="sf-with-ul" href="javascript:;" onclick="quakelive.Goto('friends/manage'); return false;">&nbsp;<span class="sf-sub-indicator"></span></a><ul class="" style="display: none; visibility: hidden;"><li><a href="javascript:;" onclick="quakelive.Goto('friends/search'); return false;">Search &amp; Invite</a></li><li><a href="javascript:;" onclick="quakelive.Goto('friends/manage'); return false;">My Friends</a></li><li><a href="javascript:;" onclick="quakelive.Goto('friends/incoming'); return false;">Invite Inbox</a></li><li><a href="javascript:;" onclick="quakelive.Goto('friends/outgoing'); return false;">Invite Outbox</a></li><li><a href="javascript:;" onclick="quakelive.Goto('friends/unblock'); return false;">Blocked Players</a></li></ul></li><li class="" id="tn_leaders"><a class="sf-with-ul" href="javascript:;" onclick="quakelive.Goto('leaders/summary'); return false;">&nbsp;<span class="sf-sub-indicator"></span></a><ul class="" style="display: none; visibility: hidden;"><li><a href="javascript:;" onclick="quakelive.Goto('leaders/summary');; return false; ">Summary</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=WINS');; return false; ">Wins</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=FRAGS');; return false; ">Frags</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=GAMES_PLAYED');; return false; ">Games Played</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=TIME_PLAYED');; return false; ">Time Played</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=EFFICIENCY');; return false; ">Efficiency</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=ACCURACY');; return false; ">Accuracy</a></li><li><a href="javascript:;" onclick="quakelive.Goto('leaders/details;view=MEDALS');; return false; ">Medals</a></li></ul></li><li class="" id="tn_news"><a class="sf-with-ul" href="javascript:;" onclick="quakelive.Goto('news'); return false;">&nbsp;<span class="sf-sub-indicator"></span></a><ul class="" style="display: none; visibility: hidden;"><li><a href="javascript:;" onclick="quakelive.Goto('news/site_news'); return false;">Site News</a></li><li><a href="javascript:;" onclick="quakelive.Goto('news/community_news'); return false;">Community News</a></li></ul>--></li><li class="" id="tn_community"><a class="sf-with-ul" href="http://pff.clan.su/forum/26" target="_blank">&nbsp;<span class="sf-sub-indicator"></span></a><!--<ul class="" style="display: none; visibility: hidden;"><li><a href="http://pff.clan.su/forum/26-428-1" target="_blank">Developer Blog</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=23" target="_blank">Service Status</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=28" target="_blank">General</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=24" target="_blank">Getting Started</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=25" target="_blank">Suggestions</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=26" target="_blank">Tech Support</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=27" target="_blank">Bug Reports</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=29" target="_blank">Competitive Play</a></li><li><a href="http://www.quakelive.com/forum/forumdisplay.php?f=30" target="_blank">Clan Recruitment</a></li></ul>--></li></ul></div>
+		<div id="qlv_OverlayContent" class="tl"></div>
+		
+		<div id="qlv_preLogContent" class="tl">
+
+			<div id="qlv_MainContent">
+  <div id="qlv_contentChat">
+	
+    <div id="post_spon_content" style="">
+			{IF_LOGGED2}
+			<!--
+			<div style="display: block;" id="lfg"><div class="lfg_content" id="lfg_minimized"><div class="footer">Let us find a match for you!</div></div></div>-->
+        
+            <!--<a href="http://www.quakelive.com/forum/external.php?type=RSS2&amp;forumid=9" target="rss">-->
+			<div style="position: absolute; width: 24px; height: 24px; right: 0pt; background-image: url(./images/icons/rss.png);"></div>
+			<!--</a>-->
+        <img src="./images/sf/login/header_news_feed.png" height="24" width="300"><br>
+	    <div id="qlv_chatNews">
+            <div id="qlv_chatNewsContent">
+        <a href="http://pff.clan.su/forum/26-435-1" target="_blank"><b>08/10</b>&nbsp;-&nbsp;Frequently Asked Questions 0.1 is out!</a>
+		<!-- <a href="javascript:;" onclick="quakelive.Goto('news/site_news/36034'); return false" target="qlforum"><b>09/30</b>&nbsp;-&nbsp;Site Update - Sept. 30th</a>
+        <a href="javascript:;" onclick="quakelive.Goto('news/site_news/35972'); return false" target="qlforum"><b>09/29</b>&nbsp;-&nbsp;Site Update - Sept. 29th</a>
+        <a href="javascript:;" onclick="quakelive.Goto('news/site_news/35362'); return false" target="qlforum"><b>09/22</b>&nbsp;-&nbsp;Site Update - Sept. 22</a>
+        <a href="javascript:;" onclick="quakelive.Goto('news/site_news/33538'); return false" target="qlforum"><b>09/01</b>&nbsp;-&nbsp;QuakeCon Awards &amp; Game Update</a>
+		-->
+    </div>
+ 	    </div>
+
+        <div class="tenpxhigh">&nbsp;</div>
+            
+    </div>
+    
+
+        <img class="spon_media" src="./images/sf/login/header_sponsor.png" height="24" width="300"><br class="spon_media">
+    <div id="spon_vert" class="spon_media" style="">
+        <a href="http://tionline.ru" target="_blank"><div style="background: transparent url(./images/a/medium_rectangle.jpg) repeat scroll 0% 0%; width: 300px; height: 250px; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">    
+            <div id="vert_sidebar_medium_rectangle" class="ql_vert_frame" style="width: 300px; height: 250px;"></div>
+        </div></a>
+        <div class="tenpxhigh">&nbsp;</div>
+    </div>
+    
+	<div id="qlv_chatControl">
+        
+   <div id="im"><div id="im-overlay-header"></div><div style="height: 434px;" id="im-overlay-body"><!--<p>Finding friends and opponents is EASY!  <a href="javascript:;" onclick='quakelive.Goto("friends/search"); return false'>Click here to start your search.</a><a class="btn_friends" href="javascript:;" onclick='quakelive.Goto("friends/search"); return false'></a>Click the button above to access the friends manager and <a href="javascript:;" onclick='quakelive.Goto("friends/search"); return false'>add more players to your friends list</a>.</p>--></div><!--<div id="im-overlay-footer"><p>You can join a friend who is playing by clicking the QUAKE LIVE icon next to their name.</p></div>--></div>
+	
+	</div>
+	  </div>
+  
+  <div id="qlv_contentBody" class="twocol_left"><div class="offlineGamev2">
+    <!--
+    <div style="display: none;" id="postlogin_init">
+        Loading…
+        <br>
+        <br>
+        <img src="./images/loader.gif" style="margin: 0pt auto;" height="13" width="62">
+    </div>
+	-->
+    
+    <div id="postlogin_unregistered">
+        <div class="filterbar" style="position: absolute; top: 4px; left: 0px; width: 672px;">
+        </div>
+
+        <div class="post_state post_state_extra">
+            <div class="toppart">
+                <div class="header_title"></div>
+                
+                <div class="fl" id="dl-text-header-container" style="border: 1px solid rgb(168, 168, 168); padding: 10px; overflow: hidden; position: relative; left: 25px; top: 55px; width: 320px; height: 130px; background-color: rgb(51, 51, 51);">
+                    <div style="color: rgb(255, 102, 0); font-size: 19px; font-family: Arial;">You must finish the Placement Match</div>
+                        <div style="padding: 2px; text-align: justify;">
+                            <div id="dl-text-header">Checking your downloaded data… Please wait.</div>
+                        </div>
+                    </div>            
+            <div class="fl">
+                <div class="twentypxv"></div>
+            </div>
+				<!--
+                <div style="position: absolute; top: 235px; width: 260px; left: -50px;">
+                    <a href="javascript:;" onclick="quakelive.mod_register.StartBotMatch(); return false" class="fr dl-btn-play dl-btn-play-off" style="position: relative; top: -3px;"></a>
+                    <div class="cl"></div>
+                </div>
+				-->
+            </div>
+        </div>
+        <!--
+        <div class="botpart">
+            <div style="display: none;" class="downloadingTip"></div>
+            <div class="tipControls">
+                <a class="btn_prev_tip fl" href="javascript:;" onclick="quakelive.mod_home.PrevTip(); return false"></a>
+                <div class="btn_divider fl"></div>
+                <a class="btn_next_tip fl" href="javascript:;" onclick="quakelive.mod_home.NextTip(); return false"></a>
+                <div class="cl"></div>
+            </div>
+        </div>
+		-->
+    </div>
+    
+	
+	<!--
+    <div id="postlogin_dataloading">
+        <div class="filterbar" style="position: absolute; top: 0px; left: 0px; width: 672px;">
+            
+<div class="postlogin_nav">
+                        <a href="javascript:;" class=" fl navButton selected" id="btn_playonline" onclick="quakelive.mod_home.GotoOnlineGames()"></a>
+                                <a href="javascript:;" class=" fl navButton " id="btn_practice" onclick="quakelive.Goto('practice')"></a>
+                                <a href="javascript:;" class="fr filterbar_toggle fl navButton" id="btn_customize" onclick="quakelive.mod_home.ToggleFilterBar()"></a>
+                                <div style="display: none;" class="tipsline"><label for="hidetips">Hide on startup</label> <input id="hidetips" type="checkbox"></div>
+                <div class="cl"></div>
+    <ul>
+                                    <li class="selected" onclick="quakelive.Goto('home')">Match Browser</li>
+                            <div class="cl"></div>
+    </ul>
+</div>            <div class="cl"></div>
+    </div>
+    
+        <div class="post_state post_state_extra">
+            <div style="position: absolute; left: 6px; top: 6px;" class="fl" id="download_status">
+                <div class="dl-progress fl">
+                    <div id="dl-bar">
+                        <div class="dl-bar-fill"></div>
+                    </div>
+                </div>
+                <div class="fl dl-percent-text">Auto-Updating:<span class="dl-percent"></span></div>
+                <br class="cl">
+                <div class="dl-timeleft" style="position: absolute; top: -1px; left: 50px; color: rgb(0, 0, 0); font-weight: bold;">
+                </div>
+            </div> 
+        </div>
+        
+        <div class="post_state post_state_extra">
+            <div class="toppart">
+                <div class="header_title">
+                    <a href="javascript:;" class="topbtn_play"></a>
+                    <div class="cl"></div>
+                </div>
+                <a class="bigbtn_left"></a>
+                <a class="bigbtn_right"></a>
+                <div class="bigbtn_desc" style="position: absolute; width: 252px; top: 350px; left: 52px; display: none;">Play and compete online against other QUAKE LIVE players at your skill level</div>
+                <div class="bigbtn_desc" style="position: absolute; width: 252px; top: 350px; left: 365px; display: none;">Browse tutorials, test your skills in challenge arenas, or start a private practice match against computer controlled players.</div>
+
+            </div>
+        </div>
+        
+        <div class="botpart">
+            <div style="display: none;" class="downloadingTip"></div>
+            <div class="tipControls">
+                <a class="btn_prev_tip fl" href="javascript:;" onclick="quakelive.mod_home.PrevTip(); return false"></a>
+                <div class="btn_divider fl"></div>
+                <a class="btn_next_tip fl" href="javascript:;" onclick="quakelive.mod_home.NextTip(); return false"></a>
+                <div class="cl"></div>
+            </div>
+        </div>
+    </div>
+	-->
+    
+	<!-- Gateway Main Content -->
+    {CONTENT}
+	<!-- /Gateway Main Content -->
+	
+</div>
+
+<div id="map_json" style="display: none;">{"CA":{"GAME_TYPE_SHORT":"CA","ARENAS":[{"MAP_NAME":"Asylum","MAP_SYSNAME":"qzca1"},{"MAP_NAME":"Trinity","MAP_SYSNAME":"qzca2"},{"MAP_NAME":"Quarantine","MAP_SYSNAME":"qzca3"},{"MAP_NAME":"Dueling
+Keeps","MAP_SYSNAME":"qzctf1"},{"MAP_NAME":"Troubled
+Waters","MAP_SYSNAME":"qzctf2"},{"MAP_NAME":"The
+Stronghold","MAP_SYSNAME":"qzctf3"},{"MAP_NAME":"Space
+CTF","MAP_SYSNAME":"qzctf4"},{"MAP_NAME":"Beyond Reality
+II","MAP_SYSNAME":"qzctf6"},{"MAP_NAME":"Arena
+Gate","MAP_SYSNAME":"qzdm1"},{"MAP_NAME":"Nameless
+Place","MAP_SYSNAME":"qzdm10"},{"MAP_NAME":"Chemical
+Reaction","MAP_SYSNAME":"qzdm11"},{"MAP_NAME":"Dredwerkz","MAP_SYSNAME":"qzdm12"},{"MAP_NAME":"Lost
+World","MAP_SYSNAME":"qzdm13"},{"MAP_NAME":"Grim
+Dungeons","MAP_SYSNAME":"qzdm14"},{"MAP_NAME":"Demon
+Keep","MAP_SYSNAME":"qzdm15"},{"MAP_NAME":"Cobalt
+Station","MAP_SYSNAME":"qzdm16"},{"MAP_NAME":"The Longest
+Yard","MAP_SYSNAME":"qzdm17"},{"MAP_NAME":"Space
+Chamber","MAP_SYSNAME":"qzdm18"},{"MAP_NAME":"Terminal
+Heights","MAP_SYSNAME":"qzdm19"},{"MAP_NAME":"House Of
+Pain","MAP_SYSNAME":"qzdm2"},{"MAP_NAME":"Hidden
+Fortress","MAP_SYSNAME":"qzdm20"},{"MAP_NAME":"Arena Of
+Death","MAP_SYSNAME":"qzdm3"},{"MAP_NAME":"Place Of Many
+Deaths","MAP_SYSNAME":"qzdm4"},{"MAP_NAME":"Forgotten
+Place","MAP_SYSNAME":"qzdm5"},{"MAP_NAME":"Campgrounds
+Redux","MAP_SYSNAME":"qzdm6"},{"MAP_NAME":"Temple Of
+Retribution","MAP_SYSNAME":"qzdm7"},{"MAP_NAME":"Brimstone
+Abbey","MAP_SYSNAME":"qzdm8"},{"MAP_NAME":"Hero's
+Keep","MAP_SYSNAME":"qzdm9"},{"MAP_NAME":"Power
+Station","MAP_SYSNAME":"qztourney1"},{"MAP_NAME":"Proving
+Grounds","MAP_SYSNAME":"qztourney2"},{"MAP_NAME":"Hell's
+Gate","MAP_SYSNAME":"qztourney3"},{"MAP_NAME":"Vertical
+Vengeance","MAP_SYSNAME":"qztourney4"},{"MAP_NAME":"Hell's Gate
+Redux","MAP_SYSNAME":"qztourney5"},{"MAP_NAME":"Almost
+Lost","MAP_SYSNAME":"qztourney6"},{"MAP_NAME":"Furious
+Heights","MAP_SYSNAME":"qztourney7"},{"MAP_NAME":"Temple of
+Pain","MAP_SYSNAME":"qztourney8"},{"MAP_NAME":"House of
+Decay","MAP_SYSNAME":"qztourney9"},{"MAP_NAME":"Blood
+Run","MAP_SYSNAME":"ztntourney1"}],"GAME_TYPE_ID":10,"GAME_TYPE_FULL":"Clan
+Arena","ENGINE_NUM":4},"CTF":{"GAME_TYPE_SHORT":"CTF","ARENAS":[{"MAP_NAME":"Dueling
+Keeps","MAP_SYSNAME":"qzctf1"},{"MAP_NAME":"Courtyard
+Conundrum","MAP_SYSNAME":"qzctf10"},{"MAP_NAME":"Troubled
+Waters","MAP_SYSNAME":"qzctf2"},{"MAP_NAME":"The
+Stronghold","MAP_SYSNAME":"qzctf3"},{"MAP_NAME":"Space
+CTF","MAP_SYSNAME":"qzctf4"},{"MAP_NAME":"Beyond Reality
+II","MAP_SYSNAME":"qzctf6"},{"MAP_NAME":"Ironworks","MAP_SYSNAME":"qzctf7"},{"MAP_NAME":"Siberia","MAP_SYSNAME":"qzctf8"},{"MAP_NAME":"Bloodlust
+CTF","MAP_SYSNAME":"qzctf9"},{"MAP_NAME":"Cobalt
+Station","MAP_SYSNAME":"qzdm16"},{"MAP_NAME":"Base
+Siege","MAP_SYSNAME":"qzteam1"},{"MAP_NAME":"Inner
+Sanctums","MAP_SYSNAME":"qzteam3"},{"MAP_NAME":"Scornforge","MAP_SYSNAME":"qzteam4"},{"MAP_NAME":"Vortex
+Portal","MAP_SYSNAME":"qzteam6"},{"MAP_NAME":"Rebound","MAP_SYSNAME":"qzteam7"}],"GAME_TYPE_ID":3,"GAME_TYPE_FULL":"Capture
+The
+Flag","ENGINE_NUM":5},"TDM":{"GAME_TYPE_SHORT":"TDM","ARENAS":[{"MAP_NAME":"Trinity","MAP_SYSNAME":"qzca2"},{"MAP_NAME":"Quarantine","MAP_SYSNAME":"qzca3"},{"MAP_NAME":"Dueling
+Keeps","MAP_SYSNAME":"qzctf1"},{"MAP_NAME":"Troubled
+Waters","MAP_SYSNAME":"qzctf2"},{"MAP_NAME":"The
+Stronghold","MAP_SYSNAME":"qzctf3"},{"MAP_NAME":"Space
+CTF","MAP_SYSNAME":"qzctf4"},{"MAP_NAME":"Beyond Reality
+II","MAP_SYSNAME":"qzctf6"},{"MAP_NAME":"Arena
+Gate","MAP_SYSNAME":"qzdm1"},{"MAP_NAME":"Nameless
+Place","MAP_SYSNAME":"qzdm10"},{"MAP_NAME":"Chemical
+Reaction","MAP_SYSNAME":"qzdm11"},{"MAP_NAME":"Dredwerkz","MAP_SYSNAME":"qzdm12"},{"MAP_NAME":"Lost
+World","MAP_SYSNAME":"qzdm13"},{"MAP_NAME":"Grim
+Dungeons","MAP_SYSNAME":"qzdm14"},{"MAP_NAME":"Demon
+Keep","MAP_SYSNAME":"qzdm15"},{"MAP_NAME":"Cobalt
+Station","MAP_SYSNAME":"qzdm16"},{"MAP_NAME":"The Longest
+Yard","MAP_SYSNAME":"qzdm17"},{"MAP_NAME":"Space
+Chamber","MAP_SYSNAME":"qzdm18"},{"MAP_NAME":"Terminal
+Heights","MAP_SYSNAME":"qzdm19"},{"MAP_NAME":"House Of
+Pain","MAP_SYSNAME":"qzdm2"},{"MAP_NAME":"Hidden
+Fortress","MAP_SYSNAME":"qzdm20"},{"MAP_NAME":"Arena Of
+Death","MAP_SYSNAME":"qzdm3"},{"MAP_NAME":"Place Of Many
+Deaths","MAP_SYSNAME":"qzdm4"},{"MAP_NAME":"Forgotten
+Place","MAP_SYSNAME":"qzdm5"},{"MAP_NAME":"Campgrounds
+Redux","MAP_SYSNAME":"qzdm6"},{"MAP_NAME":"Temple Of
+Retribution","MAP_SYSNAME":"qzdm7"},{"MAP_NAME":"Brimstone
+Abbey","MAP_SYSNAME":"qzdm8"},{"MAP_NAME":"Hero's
+Keep","MAP_SYSNAME":"qzdm9"},{"MAP_NAME":"Power
+Station","MAP_SYSNAME":"qztourney1"},{"MAP_NAME":"Proving
+Grounds","MAP_SYSNAME":"qztourney2"},{"MAP_NAME":"Hell's
+Gate","MAP_SYSNAME":"qztourney3"},{"MAP_NAME":"Vertical
+Vengeance","MAP_SYSNAME":"qztourney4"},{"MAP_NAME":"Hell's Gate
+Redux","MAP_SYSNAME":"qztourney5"},{"MAP_NAME":"Almost
+Lost","MAP_SYSNAME":"qztourney6"},{"MAP_NAME":"Furious
+Heights","MAP_SYSNAME":"qztourney7"},{"MAP_NAME":"House of
+Decay","MAP_SYSNAME":"qztourney9"},{"MAP_NAME":"Blood
+Run","MAP_SYSNAME":"ztntourney1"}],"GAME_TYPE_ID":2,"GAME_TYPE_FULL":"Team
+Death
+Match","ENGINE_NUM":3},"DM":{"GAME_TYPE_SHORT":"DM","ARENAS":[{"MAP_NAME":"Asylum","MAP_SYSNAME":"qzca1"},{"MAP_NAME":"Trinity","MAP_SYSNAME":"qzca2"},{"MAP_NAME":"Quarantine","MAP_SYSNAME":"qzca3"},{"MAP_NAME":"Dueling
+Keeps","MAP_SYSNAME":"qzctf1"},{"MAP_NAME":"Troubled
+Waters","MAP_SYSNAME":"qzctf2"},{"MAP_NAME":"The
+Stronghold","MAP_SYSNAME":"qzctf3"},{"MAP_NAME":"Space
+CTF","MAP_SYSNAME":"qzctf4"},{"MAP_NAME":"Beyond Reality
+II","MAP_SYSNAME":"qzctf6"},{"MAP_NAME":"Arena
+Gate","MAP_SYSNAME":"qzdm1"},{"MAP_NAME":"Nameless
+Place","MAP_SYSNAME":"qzdm10"},{"MAP_NAME":"Chemical
+Reaction","MAP_SYSNAME":"qzdm11"},{"MAP_NAME":"Dredwerkz","MAP_SYSNAME":"qzdm12"},{"MAP_NAME":"Lost
+World","MAP_SYSNAME":"qzdm13"},{"MAP_NAME":"Grim
+Dungeons","MAP_SYSNAME":"qzdm14"},{"MAP_NAME":"Demon
+Keep","MAP_SYSNAME":"qzdm15"},{"MAP_NAME":"Cobalt
+Station","MAP_SYSNAME":"qzdm16"},{"MAP_NAME":"The Longest
+Yard","MAP_SYSNAME":"qzdm17"},{"MAP_NAME":"Space
+Chamber","MAP_SYSNAME":"qzdm18"},{"MAP_NAME":"Terminal
+Heights","MAP_SYSNAME":"qzdm19"},{"MAP_NAME":"House Of
+Pain","MAP_SYSNAME":"qzdm2"},{"MAP_NAME":"Hidden
+Fortress","MAP_SYSNAME":"qzdm20"},{"MAP_NAME":"Arena Of
+Death","MAP_SYSNAME":"qzdm3"},{"MAP_NAME":"Place Of Many
+Deaths","MAP_SYSNAME":"qzdm4"},{"MAP_NAME":"Forgotten
+Place","MAP_SYSNAME":"qzdm5"},{"MAP_NAME":"Campgrounds
+Redux","MAP_SYSNAME":"qzdm6"},{"MAP_NAME":"Temple Of
+Retribution","MAP_SYSNAME":"qzdm7"},{"MAP_NAME":"Brimstone
+Abbey","MAP_SYSNAME":"qzdm8"},{"MAP_NAME":"Hero's
+Keep","MAP_SYSNAME":"qzdm9"},{"MAP_NAME":"Power
+Station","MAP_SYSNAME":"qztourney1"},{"MAP_NAME":"Proving
+Grounds","MAP_SYSNAME":"qztourney2"},{"MAP_NAME":"Hell's
+Gate","MAP_SYSNAME":"qztourney3"},{"MAP_NAME":"Vertical
+Vengeance","MAP_SYSNAME":"qztourney4"},{"MAP_NAME":"Hell's Gate
+Redux","MAP_SYSNAME":"qztourney5"},{"MAP_NAME":"Almost
+Lost","MAP_SYSNAME":"qztourney6"},{"MAP_NAME":"Furious
+Heights","MAP_SYSNAME":"qztourney7"},{"MAP_NAME":"Temple of
+Pain","MAP_SYSNAME":"qztourney8"},{"MAP_NAME":"House of
+Decay","MAP_SYSNAME":"qztourney9"},{"MAP_NAME":"Blood
+Run","MAP_SYSNAME":"ztntourney1"}],"GAME_TYPE_ID":4,"GAME_TYPE_FULL":"Free
+For
+All","ENGINE_NUM":0},"TOURNEY":{"GAME_TYPE_SHORT":"TOURNEY","ARENAS":[{"MAP_NAME":"Asylum","MAP_SYSNAME":"qzca1"},{"MAP_NAME":"Trinity","MAP_SYSNAME":"qzca2"},{"MAP_NAME":"Quarantine","MAP_SYSNAME":"qzca3"},{"MAP_NAME":"Arena
+Gate","MAP_SYSNAME":"qzdm1"},{"MAP_NAME":"Nameless
+Place","MAP_SYSNAME":"qzdm10"},{"MAP_NAME":"Chemical
+Reaction","MAP_SYSNAME":"qzdm11"},{"MAP_NAME":"Dredwerkz","MAP_SYSNAME":"qzdm12"},{"MAP_NAME":"Lost
+World","MAP_SYSNAME":"qzdm13"},{"MAP_NAME":"Grim
+Dungeons","MAP_SYSNAME":"qzdm14"},{"MAP_NAME":"Demon
+Keep","MAP_SYSNAME":"qzdm15"},{"MAP_NAME":"Cobalt
+Station","MAP_SYSNAME":"qzdm16"},{"MAP_NAME":"The Longest
+Yard","MAP_SYSNAME":"qzdm17"},{"MAP_NAME":"Space
+Chamber","MAP_SYSNAME":"qzdm18"},{"MAP_NAME":"Terminal
+Heights","MAP_SYSNAME":"qzdm19"},{"MAP_NAME":"House Of
+Pain","MAP_SYSNAME":"qzdm2"},{"MAP_NAME":"Arena Of
+Death","MAP_SYSNAME":"qzdm3"},{"MAP_NAME":"Place Of Many
+Deaths","MAP_SYSNAME":"qzdm4"},{"MAP_NAME":"Forgotten
+Place","MAP_SYSNAME":"qzdm5"},{"MAP_NAME":"Campgrounds
+Redux","MAP_SYSNAME":"qzdm6"},{"MAP_NAME":"Temple Of
+Retribution","MAP_SYSNAME":"qzdm7"},{"MAP_NAME":"Brimstone
+Abbey","MAP_SYSNAME":"qzdm8"},{"MAP_NAME":"Hero's
+Keep","MAP_SYSNAME":"qzdm9"},{"MAP_NAME":"Power
+Station","MAP_SYSNAME":"qztourney1"},{"MAP_NAME":"Proving
+Grounds","MAP_SYSNAME":"qztourney2"},{"MAP_NAME":"Hell's
+Gate","MAP_SYSNAME":"qztourney3"},{"MAP_NAME":"Vertical
+Vengeance","MAP_SYSNAME":"qztourney4"},{"MAP_NAME":"Hell's Gate
+Redux","MAP_SYSNAME":"qztourney5"},{"MAP_NAME":"Almost
+Lost","MAP_SYSNAME":"qztourney6"},{"MAP_NAME":"Furious
+Heights","MAP_SYSNAME":"qztourney7"},{"MAP_NAME":"Temple of
+Pain","MAP_SYSNAME":"qztourney8"},{"MAP_NAME":"House of
+Decay","MAP_SYSNAME":"qztourney9"},{"MAP_NAME":"Blood
+Run","MAP_SYSNAME":"ztntourney1"}],"GAME_TYPE_ID":5,"GAME_TYPE_FULL":"Duel","ENGINE_NUM":1}}</div>
+<div id="location_json" style="display: none;">[{"LOCATION_ID":"40","LOCATION":"Argentina","SHORT_NAME":"AR","CITY":"Buenos
+Aires","REGION":"1","COUNTRY_ABBR":"ARG","COUNTRY":"Argentina","ORDINAL":"1"},{"LOCATION_ID":"35","LOCATION":"Australia
+(Perth)","SHORT_NAME":"Perth,AU","CITY":"Perth","REGION":"02","COUNTRY_ABBR":"AUS","COUNTRY":"Australia","ORDINAL":"1"},{"LOCATION_ID":"33","LOCATION":"Australia
+(Sydney)
+#2","SHORT_NAME":"PremiumGamer","CITY":"Sydney","REGION":"02","COUNTRY_ABBR":"AUS","COUNTRY":"Australia","ORDINAL":"2"},{"LOCATION_ID":"14","LOCATION":"Australia
+(Sydney) #1","SHORT_NAME":"Hypernia
+AU","CITY":"Sydney","REGION":null,"COUNTRY_ABBR":"AUS","COUNTRY":"Australia","ORDINAL":"1"},{"LOCATION_ID":"26","LOCATION":"Toronto,
+CA","SHORT_NAME":"Hypernia
+TORO","CITY":"Toronto","REGION":"ON","COUNTRY_ABBR":"CAN","COUNTRY":"Canada","ORDINAL":"1"},{"LOCATION_ID":"38","LOCATION":"Chile","SHORT_NAME":"CL","CITY":"Santiago","REGION":"12","COUNTRY_ABBR":"CHL","COUNTRY":"Chile","ORDINAL":"1"},{"LOCATION_ID":"31","LOCATION":"Hangzhou,
+CN","SHORT_NAME":"Hypernia
+HNZ","CITY":"Hangzhou","REGION":"02","COUNTRY_ABBR":"CHN","COUNTRY":"China","ORDINAL":"1"},{"LOCATION_ID":"18","LOCATION":"Germany
+(Frankfurt)","SHORT_NAME":"i3d
+DE","CITY":"Frankfurt","REGION":null,"COUNTRY_ABBR":"DEU","COUNTRY":"Germany","ORDINAL":"1"},{"LOCATION_ID":"28","LOCATION":"Madrid,
+ES","SHORT_NAME":"Hypernia
+ES","CITY":"Madrid","REGION":"56","COUNTRY_ABBR":"ESP","COUNTRY":"Spain","ORDINAL":"1"},{"LOCATION_ID":"20","LOCATION":"France
+(Paris)","SHORT_NAME":"i3d
+FR","CITY":"Paris","REGION":"A8","COUNTRY_ABBR":"FRA","COUNTRY":"France","ORDINAL":"1"},{"LOCATION_ID":"19","LOCATION":"United
+Kingdom","SHORT_NAME":"i3d
+UK","CITY":"Maidenhead","REGION":"P9","COUNTRY_ABBR":"GBR","COUNTRY":"United
+Kingdom","ORDINAL":"1"},{"LOCATION_ID":"41","LOCATION":"Iceland","SHORT_NAME":"IS","CITY":"Keflavik","REGION":"10","COUNTRY_ABBR":"ISL","COUNTRY":"Iceland","ORDINAL":"1"},{"LOCATION_ID":"27","LOCATION":"Tokyo,
+JP","SHORT_NAME":"Hypernia
+TKO","CITY":"Tokyo","REGION":null,"COUNTRY_ABBR":"JPN","COUNTRY":"Japan","ORDINAL":"1"},{"LOCATION_ID":"17","LOCATION":"Netherlands
+(Amsterdam)","SHORT_NAME":"i3d
+NL","CITY":"Amsterdam","REGION":"11","COUNTRY_ABBR":"NLD","COUNTRY":"Netherlands","ORDINAL":"1"},{"LOCATION_ID":"30","LOCATION":"Warsaw,
+PL #1","SHORT_NAME":"EuroTransit
+WAW","CITY":"Warsaw","REGION":"32","COUNTRY_ABBR":"POL","COUNTRY":"Poland","ORDINAL":"1"},{"LOCATION_ID":"32","LOCATION":"Warsaw,
+PL #2","SHORT_NAME":"Shooters
+WAW","CITY":"Warsaw","REGION":"67","COUNTRY_ABBR":"POL","COUNTRY":"Poland","ORDINAL":"2"},{"LOCATION_ID":"37","LOCATION":"Romania
+#1","SHORT_NAME":"RO
+#1","CITY":"Bucharest","REGION":"10","COUNTRY_ABBR":"ROM","COUNTRY":"Romania","ORDINAL":"1"},{"LOCATION_ID":"39","LOCATION":"Romania
+#2","SHORT_NAME":"RO
+#2","CITY":"Bucharest","REGION":"10","COUNTRY_ABBR":"ROM","COUNTRY":"Romania","ORDINAL":"2"},{"LOCATION_ID":"29","LOCATION":"Sweden
+(Stockholm) #1","SHORT_NAME":"EuroTransit
+STK","CITY":"Stockholm","REGION":"26","COUNTRY_ABBR":"SWE","COUNTRY":"Sweden","ORDINAL":"1"},{"LOCATION_ID":"36","LOCATION":"Sweden
+(Stockholm) #2","SHORT_NAME":"Playstar
+SE","CITY":"Stockholm","REGION":"26","COUNTRY_ABBR":"SWE","COUNTRY":"Sweden","ORDINAL":"2"},{"LOCATION_ID":"25","LOCATION":"California,
+USA (Los Angeles)","SHORT_NAME":"MyIS CA,LA","CITY":"Los
+Angeles","REGION":"CA","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"10","LOCATION":"California, USA
+(Palo Alto)","SHORT_NAME":"MyIS CA,Palo Alto","CITY":"Palo
+Alto","REGION":"CA","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"16","LOCATION":"California, USA
+(San Francisco)","SHORT_NAME":"GNi CA,SF","CITY":"San
+Francisco","REGION":"CA","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"22","LOCATION":"Georgia, USA
+(Atlanta)","SHORT_NAME":"MyIS
+GA","CITY":"Atlanta","REGION":"GA","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"21","LOCATION":"Illinois, USA
+(Chicago)","SHORT_NAME":"MyIS
+IL","CITY":"Chicago","REGION":"IL","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"24","LOCATION":"New York,
+USA","SHORT_NAME":"MyIS NY","CITY":"New
+York","REGION":"NY","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"6","LOCATION":"Texas, USA
+(Dallas)","SHORT_NAME":"MyIS
+TX","CITY":"Dallas","REGION":"TX","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"11","LOCATION":"Virginia,
+USA","SHORT_NAME":"MyIS
+VA","CITY":"Ashburn","REGION":"VA","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"},{"LOCATION_ID":"23","LOCATION":"Washington, USA
+(Seattle)","SHORT_NAME":"MyIS
+WA","CITY":"Seattle","REGION":"WA","COUNTRY_ABBR":"USA","COUNTRY":"United
+States","ORDINAL":"1"}]</div>
+<div id="location_tag_json" style="display: none;">{"TAG":["Asia","Australia","Europe","USA"]}</div></div>
+  <div class="cl"></div>
+</div>
+			
+			<div class="thirtypxhigh">&nbsp;</div>
+		</div>
+	      <div id="qlv_footer2" class="tl">
+	       <img class="id_logo" alt="" src="./images/sf/general/r2_logo.png" height="57" width="52">
+		          <div class="footerCopy2">
+              	      	     	   <a href="{SELF}" target="">Home</a> | 
+			      			  				   <!--<a href="javascript:;" onclick="quakelive.Goto('news'); return false">-->News<!--</a>--> |
+                <a href="http://pff.clan.su/forum/26-435-1" target="_blank">FAQ</a> |
+                <!--<a href="javascript:;" onclick="quakelive.Goto('guide'); return false">-->Game Manual<!--</a>--> |
+                <a href="http://pff.clan.su/forum/26" target="_blank">Forums</a>
+                <br>
+                              <div style="font-weight: normal;">
+                    QUAKE LIVE™ © 2007-2009, Id Software LLC, a <a href="http://www.zenimax.com/" target="_blank">ZeniMax Media company</a>. All Rights Reserved.<br>
+                    <a href="javascript:;" onclick="quakelive.Goto('home/advertise'); return false">Advertising</a> |
+                    <a href="javascript:;" onclick="quakelive.Goto('legals/privacy_policy'); return false">Privacy Policy</a> |
+                    <a href="javascript:;" onclick="quakelive.Goto('legals/terms_of_use'); return false">Terms of Use</a> |
+                    <a href="javascript:;" onclick="quakelive.Goto('legals/notices'); return false">Legal Notices</a>
+                    <br>
+                </div>
+		          </div>
+              <!-- <a href="http://www.idsoftware.com/business/jobs/" target="_blank"><img style="position: absolute; right: 25px; top: 2px;" alt="" src="./images/ql_hiring.png" height="59" width="140"></a>-->
+	      </div>
+	</div>
+	<!-- ### End Main content -->
+	<div class="cl"></div>
+</div></div>
+
+<!--
+<div style="display: block; opacity: 0.0484;" id="ajax_loading_indicator">Loading…<br><img src="./images/loader.gif" height="13" width="62"></div>
+-->
+<div id="ql_notifier"></div>
+
+<!--
+<script type="text/javascript">window.SITECONFIG = {xmppDomain: 'xmpp.quakelive.com',realm: 'quakelive',cdnUrl: 'http://cdn-assets.quakelive.com/cdn/quakelive2009093003',baseUrl: 'http://www.quakelive.com',staticUrl: 'http://cdn-web.quakelive.com/web2009100101',resourceRevision: 2009100101,xyzzy: 'Nothing happens',showRemoteVerts: true,showContextMenus: false,trackPageViews: true};</script>
+-->
+
+<script type="text/javascript" src="{THEME_ROOT}/js/compiled.js"></script>
+
+<!--[if lte IE 6]>
+
+<script type='text/javascript' src='{THEME_ROOT}/js/compiled_ie6.js'></script>
+
+<![endif]-->
+
+
+<script type="text/javascript" src="{THEME_ROOT}/js/script.js"></script>
+<!--
+<script type="text/javascript">$(document).ready( function() {quakelive.valanceData = {"start":0,"end":0,"name":"default","url":"","script":true,"scriptData":[]};function NotLoggedIn() {quakelive.Init();nav.randomPlayer = 'nomsi';nav.navbar = {'Home': {'id': 'tn_home','goto': 'home','submenu': {'Play Online': {'callback': 'quakelive.mod_home.GotoOnlineGames()','submenu': {'': SUBMENU_END}},'Practice': {'callback': 'quakelive.mod_home.GotoOfflineGames()','submenu': {'Start a Match':    { 'goto': 'practice/launcher' },'Training Center':  { 'goto': 'practice/training' },'': SUBMENU_END}},'Profile of the Day': {'goto': 'profile/summary/'+ nav.randomPlayer},'': SUBMENU_END}},'Profile': {'id': 'tn_profile','goto': 'profile/summary/'+ quakelive.username,'submenu': {'Summary':      { 'goto': 'profile/summary/'+ quakelive.username },'Statistics':   { 'goto': 'profile/statistics/'+ quakelive.username },'Awards':       { 'goto': 'profile/awards/'+ quakelive.username },'Friends':      { 'goto': 'profile/friends/'+ quakelive.username },'Competitors':  { 'goto': 'profile/competitors/'+ quakelive.username },'Matches':      { 'goto': 'profile/matches/'+ quakelive.username },'': SUBMENU_END}},'Friends': {'id': 'tn_friends','goto': 'friends/manage','submenu': {'Search & Invite': { 'goto': 'friends/search' },'My Friends':      { 'goto': 'friends/manage' },'Invite Inbox':    { 'goto': 'friends/incoming' },'Invite Outbox':   { 'goto': 'friends/outgoing' },'Blocked Players': { 'goto': 'friends/unblock' },'': SUBMENU_END}},'Leaders': {'id': 'tn_leaders','goto': 'leaders/summary','submenu': {'Summary':      { 'callback': "quakelive.Goto('leaders/summary');" },'Wins':         { 'callback': "quakelive.Goto('leaders/details;view=WINS');" },'Frags':        { 'callback': "quakelive.Goto('leaders/details;view=FRAGS');" },'Games Played': { 'callback': "quakelive.Goto('leaders/details;view=GAMES_PLAYED');" },'Time Played':  { 'callback': "quakelive.Goto('leaders/details;view=TIME_PLAYED');" },'Efficiency':   { 'callback': "quakelive.Goto('leaders/details;view=EFFICIENCY');" },'Accuracy':     { 'callback': "quakelive.Goto('leaders/details;view=ACCURACY');" },'Medals':       { 'callback': "quakelive.Goto('leaders/details;view=MEDALS');" },'': SUBMENU_END}},'News': {'id': 'tn_news','goto': 'news','submenu': {'Site News':      { 'goto': 'news/site_news' },'Community News': { 'goto': 'news/community_news' },'': SUBMENU_END}},'Forums': {'id': 'tn_community','href': '/forum/','submenu': {'Developer Blog':   { 'href': '/forum/forumdisplay.php?f=32' },'Service Status':   { 'href': '/forum/forumdisplay.php?f=23' },'General':          { 'href': '/forum/forumdisplay.php?f=28' },'Getting Started':  { 'href': '/forum/forumdisplay.php?f=24' },'Suggestions':      { 'href': '/forum/forumdisplay.php?f=25' },'Tech Support':     { 'href': '/forum/forumdisplay.php?f=26' },'Bug Reports':      { 'href': '/forum/forumdisplay.php?f=27' },'Competitive Play': { 'href': '/forum/forumdisplay.php?f=29' },'Clan Recruitment': { 'href': '/forum/forumdisplay.php?f=30' },'': SUBMENU_END}},'': SUBMENU_END};}$.ajax({url: '/user/load',dataType: 'json',cache: false,success: function ( json ) {if ( json.ECODE == 0 ) {quakelive.Init( json );nav.randomPlayer = 'nomsi';nav.navbar = {'Home': {'id': 'tn_home','goto': 'home','submenu': {'Play Online': {'callback': 'quakelive.mod_home.GotoOnlineGames()','submenu': {'': SUBMENU_END}},'Practice': {'callback': 'quakelive.mod_home.GotoOfflineGames()','submenu': {'Start a Match':    { 'goto': 'practice/launcher' },'Training Center':  { 'goto': 'practice/training' },'': SUBMENU_END}},'Profile of the Day': {'goto': 'profile/summary/'+ nav.randomPlayer},'': SUBMENU_END}},'Profile': {'id': 'tn_profile','goto': 'profile/summary/'+ quakelive.username,'submenu': {'Summary':      { 'goto': 'profile/summary/'+ quakelive.username },'Statistics':   { 'goto': 'profile/statistics/'+ quakelive.username },'Awards':       { 'goto': 'profile/awards/'+ quakelive.username },'Friends':      { 'goto': 'profile/friends/'+ quakelive.username },'Competitors':  { 'goto': 'profile/competitors/'+ quakelive.username },'Matches':      { 'goto': 'profile/matches/'+ quakelive.username },'': SUBMENU_END}},'Friends': {'id': 'tn_friends','goto': 'friends/manage','submenu': {'Search & Invite': { 'goto': 'friends/search' },'My Friends':      { 'goto': 'friends/manage' },'Invite Inbox':    { 'goto': 'friends/incoming' },'Invite Outbox':   { 'goto': 'friends/outgoing' },'Blocked Players': { 'goto': 'friends/unblock' },'': SUBMENU_END}},'Leaders': {'id': 'tn_leaders','goto': 'leaders/summary','submenu': {'Summary':      { 'callback': "quakelive.Goto('leaders/summary');" },'Wins':         { 'callback': "quakelive.Goto('leaders/details;view=WINS');" },'Frags':        { 'callback': "quakelive.Goto('leaders/details;view=FRAGS');" },'Games Played': { 'callback': "quakelive.Goto('leaders/details;view=GAMES_PLAYED');" },'Time Played':  { 'callback': "quakelive.Goto('leaders/details;view=TIME_PLAYED');" },'Efficiency':   { 'callback': "quakelive.Goto('leaders/details;view=EFFICIENCY');" },'Accuracy':     { 'callback': "quakelive.Goto('leaders/details;view=ACCURACY');" },'Medals':       { 'callback': "quakelive.Goto('leaders/details;view=MEDALS');" },'': SUBMENU_END}},'News': {'id': 'tn_news','goto': 'news','submenu': {'Site News':      { 'goto': 'news/site_news' },'Community News': { 'goto': 'news/community_news' },'': SUBMENU_END}},'Forums': {'id': 'tn_community','href': '/forum/','submenu': {'Developer Blog':   { 'href': '/forum/forumdisplay.php?f=32' },'Service Status':   { 'href': '/forum/forumdisplay.php?f=23' },'General':          { 'href': '/forum/forumdisplay.php?f=28' },'Getting Started':  { 'href': '/forum/forumdisplay.php?f=24' },'Suggestions':      { 'href': '/forum/forumdisplay.php?f=25' },'Tech Support':     { 'href': '/forum/forumdisplay.php?f=26' },'Bug Reports':      { 'href': '/forum/forumdisplay.php?f=27' },'Competitive Play': { 'href': '/forum/forumdisplay.php?f=29' },'Clan Recruitment': { 'href': '/forum/forumdisplay.php?f=30' },'': SUBMENU_END}},'': SUBMENU_END};} else {NotLoggedIn();}},error: function ( xhr, status, ex ) {qlPrompt({fatal: true,title: 'Error loading profile',body: '<p>Unable to load your profile data. Please reload the page, and try again.</p>'+'<p><a href="/forum/">Visit the forums for technical support</a></p><br/>'+'<p><b>Error returned by request:</b></p><p>'+ status +'</p>'});}});} );</script>
+-->
+
+<!-- Start Quantcast tag -->
+<!--
+<script type="text/javascript">
+_qoptions={
+qacct:"p-3eK2SF53G6Wa6"
+};
+</script>
+<script type="text/javascript" src="QUAKELIVE-Home04_files/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-3eK2SF53G6Wa6.gif"
+style="display: none;" border="0" height="1" width="1"
+alt="Quantcast"/>
+</noscript>
+-->
+<!-- End Quantcast tag -->
+
+<!-- AddThis.com -->
+<!--
+<script type="text/javascript">
+var addthis_config = {
+    services_compact: 'facebook, twitter, myspace, favorites, more',
+    ui_header_color: '#ccc',
+    ui_header_background: '#232323',
+    ui_cobrand: 'Quake Live',
+    username: 'idsoftware'
+};
+</script>
+<script type="text/javascript" src="{THEME_ROOT}/js/addthis_widget.js"></script>
+-->
+<!-- End AddThis.com -->
+</body></html>
+<!-- GTW: /main -->
